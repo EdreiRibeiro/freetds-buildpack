@@ -19,3 +19,9 @@ dependencies:
   sha256: ca05053ab63f81fb8c7da4eff9716ffe1a81e7b34b9d25589dd0cf38c0b069be
   cf_stacks:
   - cflinuxfs2
+- name: python
+  version: 3.5.7
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.7-linux-x64-cflinuxfs3-81f40b1a.tgz
+  sha256: 81f40b1aa0122846a033fb0c468f8209f5164a75d5549f906b0827d79fa5bfa1
+  cf_stacks:
+  - cflinuxfs2
