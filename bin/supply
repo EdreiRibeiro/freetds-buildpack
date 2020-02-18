@@ -15,3 +15,9 @@ output_dir=$(mktemp -d -t supplyXXX)
 echo "-----> Running go build supply"
 GOROOT=$GoInstallDir/go GOPATH=$BUILDPACK_DIR $GoInstallDir/go/bin/go build -o $output_dir/supply freetds/supply/cli
 $output_dir/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX"
+
+def install_pymssql
+  puts "Installing pymssql"
+
+  pip install pymssql
+end
